@@ -114,6 +114,7 @@ body._lock {
 ._container {
   max-width: 1172px;
   margin: 0 auto;
+  padding: 0px 15px;
 }
 
 .btn {
@@ -882,13 +883,13 @@ body.ie ._ibg img {
 }
 
 .header__content {
+  padding: 13px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 13px 0px;
 }
 
 .header__logo {
@@ -937,17 +938,32 @@ body.ie ._ibg img {
 }
 
 .footer {
-  background-color: #00397B;
+  background-color: #00397b;
 }
 
 .footer__body {
   color: #fff;
 }
 
+.footer__logo {
+  padding-bottom: 33px;
+  padding-top: 33px;
+}
+
+.footer__points {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 33px;
+}
+
 .footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .footer__item {
@@ -981,15 +997,22 @@ body.ie ._ibg img {
   display: -ms-flexbox;
   display: flex;
   font-size: 22px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 400px;
+          flex: 1 0 400px;
 }
 
 .footer__nomber {
   color: inherit;
 }
 
+.footer__nomber:not(:last-child) {
+  margin: 0px 44px 0px 0px;
+}
+
 .footer__under {
   min-height: 50px;
-  background-color: #002F65;
+  background-color: #002f65;
   color: #9495a1;
   display: -webkit-box;
   display: -ms-flexbox;
