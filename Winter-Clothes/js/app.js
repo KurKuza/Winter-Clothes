@@ -790,7 +790,10 @@ animate({
 			Element.prototype.msMatchesSelector;
 	}
 })();
-
+window.onload(){
+   const header= document.querySelector('.header');
+   console.log(header);
+}
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {
