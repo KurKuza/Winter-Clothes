@@ -2001,10 +2001,10 @@ let slider_about = new Swiper('.cards__slider', {
 	slidesPerView: 3.05,
 	spaceBetween: 50,
 	autoHeight: true,
-	speed: 800,
+	speed: 600,
 	//touchRatio: 0,
 	//simulateTouch: false,
-	//loop: true,
+	loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
@@ -2014,8 +2014,8 @@ let slider_about = new Swiper('.cards__slider', {
 	//},
 	// Arrows
 	navigation: {
-		nextEl: '.about__more .cards__navigation_next',
-		prevEl: '.about__more .cards__navigation_next',
+		nextEl: '.cards__navigation_next',
+		prevEl: '.cards__navigation_prev',
 	},
 	/*
 	breakpoints: {

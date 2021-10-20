@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header.html',{})
+		<main class="page">
+			<section class="header-fullscreen">
+				<div class="header-fullscreen__content">
+					<div class="header-fullscreen__container _container">
+
+						<div class="header-fullscreen__parallax parallax-images">
+							<div class="parallax_image parallax-images__image-1"></div>
+							<div class="parallax_image parallax-images__image-2"></div>
+							<div class="parallax_image parallax-images__image-3"></div>
+							<div class="parallax_image parallax-images__image-4"></div>
+							<div class="parallax_image parallax-images__image-5"></div>
+						</div>
+
+						<div class="header-fullscreen__body">
+							<h1 class="header-fullscreen__title title">Одежда для всей семьи
+								в зимнее время</h1>
+							<div class="header-fullscreen__description">
+								Онлайн-магазин зимней одежды- когда забыл купить, а выходить из дома, уже холодно
+							</div>
+							<div class="header-fullscreen__btns">
+								<div class="header-fullscreen__btn btn">Заказать</div>
+								<div class="header-fullscreen__btn btn collar">Купить</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="header-fullscreen__image">
+					<img src="img/bg-image.png" alt="image-header">
+				</div>
+
+			</section>
+
+			<section class="advantages">
+				<div class="advantages__container _container">
+					<h2 class="advantages__title title">Почему выбирают именно наши куртки</h2>
+					<div class="advantages__items">
+						<div class="advantages__item">
+							<div class="advantages__image">
+								<img src="img/icons/image_3.png" alt="advantage">
+							</div>
+							<div class="advantages__text">Устойчива против больших перепад температур</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__image">
+								<img src="img/icons/image_4.png" alt="advantage">
+							</div>
+							<div class="advantages__text">Пошив не порвется даже при активной игре</div>
+						</div>
+						<div class="advantages__item">
+							<div class="advantages__image">
+								<img src="img/icons/image_5.png" alt="advantage">
+							</div>
+							<div class="advantages__text">Не боится дождя и снега</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="info">
+				<div class="info__container _container">
+					<h2 class="info__title title">Как мы удерживаем тепло</h2>
+
+					<div class="info__body">
+						<div class="info__image">
+							<img src="img/cloth_1.png" alt="jacket">
+						</div>
+						<div class="info__text">
+							<div class="info__check-mark">
+								<img src="img/snowflake.svg" alt="snowflake-icon">
+							</div>
+							<p>Наши куртки оставляют все тепло внутри, не давая ему выходить наружу.</p>
+							<p>За такой результат отвечает двойной пашив тканей и революционные набивки, которые мы используем
+								в
+								каждом своем продукте</p>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cards">
+				<div class="cards__container _container">
+					<h2 class="cards__title title">Наши категории</h2>
+					<div class="cards__slider _swiper">
+						<div class="cards__slide">
+							<div class="cards__image">
+								<img src="img/dude_1.png" alt="jacket">
+							</div>
+							<h3 class="cards__card-title">Куртки</h3>
+							<div class="cards__text">Получить куртку с уникальным дизайном и лучшим пошивом</div>
+						</div>
+						<div class="cards__slide">
+							<div class="cards__image">
+								<img src="img/card_front.png" alt="thermal underwear">
+							</div>
+							<h3 class="cards__card-title">Термобелье</h3>
+							<div class="cards__text">Получить термобелье для наилучшего сдерживания тепла</div>
+						</div>
+						<div class="cards__slide">
+							<div class="cards__image">
+								<img src="img/other.png" alt="heat and gloves">
+							</div>
+							<h3 class="cards__card-title">Другое</h3>
+							<div class="cards__text">У нас много интересного!</div>
+						</div>
+						<div class="cards__slide">
+							<div class="cards__image">
+								<img src="img/dude_1.png" alt="jacket">
+							</div>
+							<h3 class="cards__card-title">Куртки</h3>
+							<div class="cards__text">Получить куртку с уникальным дизайном и лучшим пошивом</div>
+						</div>
+					</div>
+					<div class="cards__navigation">
+						<div class="cards__navigation_prev">
+						</div>
+						<div class="cards__navigation_next">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>
