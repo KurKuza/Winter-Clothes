@@ -1,5 +1,6 @@
 let scr_body = document.querySelector('body');
 let scr_blocks = document.querySelectorAll('._scr-sector');
+// Для анимации блоков
 let scr_items = document.querySelectorAll('._scr-item');
 let scr_fix_block = document.querySelectorAll('._side-wrapper');
 let scr_min_height = 750;
@@ -61,16 +62,16 @@ function scroll_scroll() {
 			let scr_item_height = scr_item.offsetHeight;
 
 
-			let scr_item_point = window.innerHeight - (window.innerHeight - scr_item_height / 3);
+			let scr_item_point = window.innerHeight - (window.innerHeight - scr_item_height / 2);
 			if (window.innerHeight > scr_item_height) {
-				scr_item_point = window.innerHeight - scr_item_height / 3;
+				scr_item_point = window.innerHeight - scr_item_height / 10;
 			}
 
 			if ((src_value > scr_item_offset - scr_item_point) && src_value < (scr_item_offset + scr_item_height)) {
 				scr_item.classList.add('_active');
 				scroll_load_item(scr_item);
 			} else {
-				scr_item.classList.remove('_active');
+				// scr_item.classList.remove('_active');
 			}
 			if (((src_value > scr_item_offset - window.innerHeight))) {
 				if (scr_item.querySelectorAll('._lazy').length > 0) {
@@ -302,7 +303,7 @@ function _goto(target_block, speed, offset = 0) {
 	//}
 	let options = {
 		speedAsDuration: true,
-		speed: speed,
+		speed: 1000,
 		header: header,
 		offset: offset,
 		easing: 'easeOutQuad',

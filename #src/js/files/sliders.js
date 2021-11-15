@@ -62,42 +62,42 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) { }
 
 let slider_about = new Swiper('.cards__slider', {
-	/*
-	grid: {
-	rows: 2,
-},
-	effect: 'fade',
-	autoplay: {
-		delay: 3000,
-		disableOnInteraction: false,
-	},
-	*/
-	observer: true, 
+	observer: true,
 	observeParents: true,
 	slidesPerView: 3.05,
-	spaceBetween: 50,
 	autoHeight: true,
 	speed: 600,
+	spaceBetween: 50,
 	//touchRatio: 0,
 	//simulateTouch: false,
 	loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
+	// pagination: {
+	// 	el: '.cards__dotts',
+	// 	clickable: true,
+	// },
 	// Arrows
 	navigation: {
 		nextEl: '.cards__navigation_next',
 		prevEl: '.cards__navigation_prev',
 	},
-	/*
+
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: true
+	},
+
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
-			spaceBetween: 0,
+			spaceBetween: 20,
+			autoHeight: true,
+		},
+		480: {
+			slidesPerView: 2,
+			spaceBetween: 20,
 			autoHeight: true,
 		},
 		768: {
@@ -106,14 +106,14 @@ let slider_about = new Swiper('.cards__slider', {
 		},
 		992: {
 			slidesPerView: 3,
-			spaceBetween: 20,
-		},
-		1268: {
-			slidesPerView: 4,
 			spaceBetween: 30,
 		},
+		1268: {
+			slidesPerView: 3,
+			spaceBetween: 50,
+		},
 	},
-	*/
+
 	on: {
 		lazyImageReady: function () {
 			ibg();

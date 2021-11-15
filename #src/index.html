@@ -6,7 +6,9 @@
 
 <body>
 	<div class="wrapper">
-		@@include('_header.html',{})
+		@@include('_header.html',{
+
+		})
 		<main class="page">
 			<section class="header-fullscreen">
 				<div class="header-fullscreen__content">
@@ -20,14 +22,14 @@
 							<div class="parallax_image parallax-images__image-5"></div>
 						</div>
 
-						<div class="header-fullscreen__body">
-							<h1 class="header-fullscreen__title title">Одежда для всей семьи
+						<div class="header-fullscreen__body _scr-item">
+							<h1 class="header-fullscreen__title title _shipped">Одежда для всей семьи
 								в зимнее время</h1>
 							<div class="header-fullscreen__description">
 								Онлайн-магазин зимней одежды- когда забыл купить, а выходить из дома, уже холодно
 							</div>
 							<div class="header-fullscreen__btns">
-								<div class="header-fullscreen__btn btn">Заказать</div>
+								<div dblclick="alert('Клик!');" class="header-fullscreen__btn btn">Заказать</div>
 								<div class="header-fullscreen__btn btn collar">Купить</div>
 							</div>
 						</div>
@@ -35,16 +37,16 @@
 					</div>
 				</div>
 
-				<div class="header-fullscreen__image">
+				<div class="header-fullscreen__image _scr-item">
 					<img src="img/bg-image.png" alt="image-header">
 				</div>
 
 			</section>
 
-			<section class="advantages">
+			<section class="advantages _scr-item">
 				<div class="advantages__container _container">
 					<h2 class="advantages__title title">Почему выбирают именно наши куртки</h2>
-					<div class="advantages__items">
+					<div class="advantages__items _scr-item">
 						<div class="advantages__item">
 							<div class="advantages__image">
 								<img src="img/icons/image_3.png" alt="advantage">
@@ -66,12 +68,12 @@
 					</div>
 				</div>
 			</section>
-			<section class="info">
+			<section class="info _scr-item">
 				<div class="info__container _container">
 					<h2 class="info__title title">Как мы удерживаем тепло</h2>
 
 					<div class="info__body">
-						<div class="info__image">
+						<div class="info__image _scr-item">
 							<img src="img/cloth_1.png" alt="jacket">
 						</div>
 						<div class="info__text">
@@ -87,7 +89,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="cards">
+			<section class="cards _scr-item">
 				<div class="cards__container _container">
 					<h2 class="cards__title title">Наши категории</h2>
 					<div class="cards__slider _swiper">
@@ -119,13 +121,50 @@
 							<h3 class="cards__card-title">Куртки</h3>
 							<div class="cards__text">Получить куртку с уникальным дизайном и лучшим пошивом</div>
 						</div>
+						<div class="cards__slide">
+							<div class="cards__image">
+								<img src="img/dude_1.png" alt="jacket">
+							</div>
+							<h3 class="cards__card-title">Куртки</h3>
+							<div class="cards__text">Получить куртку с уникальным дизайном и лучшим пошивом</div>
+						</div>
 					</div>
-					<div class="cards__navigation">
+					<nav class="cards__navigation">
 						<div class="cards__navigation_prev">
 						</div>
 						<div class="cards__navigation_next">
 						</div>
+					</nav>
+				</div>
+			</section>
+			<section class="contact _scr-item">
+				<div class="contact__container _container">
+
+					<h2 class="contact__title title">Связаться</h2>
+
+					<form action="#" class="contact__form form">
+						<input autocomplete="off" type="text" name="form[]" required data-error="Ошибка" data-value="Имя*"
+							class="input">
+						<input autocomplete="off" type="email" name="form[]" required data-error="Ошибка" data-value="Email*"
+							class="input">
+						<input autocomplete="off" type="tel" name="form[]" required data-error="Ошибка" data-value="Номер*"
+							class="input">
+						<input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+							data-value="Продолжайтe, мы слушаем..." class="input">
+
+						<button type="submit" class=" btn-form input collar-2">Отправить</button>
+					</form>
+
+					<div class="contact__socio">
+						<a href="https://vk.com/kurkulio" class="contact__link">
+							<img src="img/icons/VK.svg" alt="VK">
+						</a>
+						<a href="https://t.me/KurKulio" class="contact__link">
+							<img src="img/icons/Telegram.svg" alt="Telegram"></a>
+						<a href="https://www.instagram.com/kurkulioo/" class="contact__link">
+							<img src="img/icons/Instagram.svg" alt="Instagram"></a>
 					</div>
+
 				</div>
 			</section>
 		</main>
